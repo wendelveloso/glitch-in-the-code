@@ -11,8 +11,9 @@ function listOverdueLoans(movies) {
         atrasados.push({
           id: filme.id,
           titulo: filme.titulo,
-          dataEmprestimo: emprestimo.dataEmprestimo,
           dataDevolucao: emprestimo.dataDevolucao,
+          dataEmprestimo: emprestimo.dataEmprestimo,
+          nomePessoa: emprestimo.nomePessoa,
           status: "atrasado",
         });
       }
